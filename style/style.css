@@ -22,7 +22,7 @@
     --shadow-weak: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -134,7 +134,7 @@ li:not(.hoverDark):hover {
     width: 1259px;
     padding: 20px;
     margin-bottom: 50px;
-    grid-template-columns: 604px 604px;
+    grid-template-columns: 37.67rem 37.67rem;
     border-radius: var(--radius);
     font-family: 'Roboto Slab', serif;
     gap: 15px;
@@ -192,4 +192,42 @@ li:not(.hoverDark):hover {
     font-family: 'Courier New', Courier, monospace;
     color: green;
     box-shadow: var(--shadow-weak);
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .container-cafeDaManha {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+
+    .container-cafeDaManha {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    li {
+        cursor: pointer;
+        padding: 5px;
+        font-size: 1.1rem;
+        margin-left: 10px;
+    }
+
+    .items {
+        width: 100%;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.1);
+        display: flex;
+        border-radius: var(--radius);
+    }
+    .options{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 5px;
+    }
 }
